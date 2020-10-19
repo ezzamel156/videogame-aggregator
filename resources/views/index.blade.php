@@ -5,7 +5,7 @@
         <h2 class="text-blue-500 uppercase tracking-wide font-semibold">
             Popular Games
         </h2>
-        <div class="popular-games text-sm grid grid-cols-6 gap-12 border-b border-gray-800 pb-16">
+        <div class="popular-games text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-12 border-b border-gray-800 pb-16">
             <div class="game mt-8">
                 <div class="relative inline-block">
                     <a href="#">
@@ -25,8 +25,8 @@
                 </div>
             </div> {{-- games end --}}
         </div> {{-- popular games end --}}
-        <div class="flex my-10">
-            <div class="recently-reviewed mr-32 w-3/4">
+        <div class="flex flex-col lg:flex-row my-10">
+            <div class="recently-reviewed lg:mr-32 w-full lg:w-3/4">
                 <h2 class="text-blue-500 uppercase tracking-wide font-semibold">
                     Recently Reviewed
                 </h2>
@@ -50,14 +50,14 @@
                             <div class="text-gray-400 mt-1">
                                 Playstation 4 
                             </div>
-                            <div class="mt-6 text-gray-400">
+                            <div class="mt-6 text-gray-400 hidden lg:block">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laboriosam labore mollitia vero ratione alias aliquid amet aspernatur facilis, reiciendis!
                             </div>
                         </div>
                     </div> {{-- games end --}}
                 </div>
             </div>
-            <div class="w-1/4 space-y-8">
+            <div class="lg:w-1/4 space-y-8 mt-12 lg:mt-0">
                 <div class="most-anticipated">
                     <h2 class="text-blue-500 uppercase tracking-wide font-semibold">
                         Most Anticipated

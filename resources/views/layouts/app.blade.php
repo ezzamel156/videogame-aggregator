@@ -9,8 +9,8 @@
 </head>
 <body class="bg-gray-900 text-white">
     <header class="border-b border-gray-800">
-        <nav class="mx-auto flex justify-between items-center px-4 py-6">
-            <div class="flex items-center">
+        <nav class="container mx-auto flex flex-col lg:flex-row justify-between items-center px-4 py-6">
+            <div class="flex flex-col lg:flex-row items-center">
                 <a href="/" class="ml-4">
                     <svg xmlns="http://www.w3.org/2000/svg"  class="w-8 flex-none"  viewBox="0 0 27 27">
                         <g fill="none" fill-rule="evenodd">
@@ -23,13 +23,13 @@
                         </g>
                     </svg>
                 </a>
-                <ul class="flex ml-8 space-x-8">
+                <ul class="flex ml-0 lg:ml-8 space-x-8 mt-6 lg:mt-0">
                     <li><a href="#" class="hover:text-gray-400">Games</a></li>
                     <li><a href="#" class="hover:text-gray-400">Reviews</a></li>
                     <li><a href="#" class="hover:text-gray-400">Coming Soon</a></li>
                 </ul>
             </div>
-            <div class="flex items-center">
+            <div class="flex items-center mt-6 lg:mt-0">
                 <div class="relative">
                     <input type="text" class="text-sm bg-gray-800 rounded-full focus:outline-none focus:shadow-outline px-3 py-1 w-64">
                     <div class="absolute top-0 flex items-center h-full ml-2">
