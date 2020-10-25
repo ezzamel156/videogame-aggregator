@@ -1,0 +1,5 @@
+{
+    "tailwindCSS.emmetCompletions": true,
+    "tailwindCSS.colorDecorators": "off",
+    "css.lint.unknownAtRules": "ignore"
+}
