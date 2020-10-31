@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ config('app.name')}}</title>
     <link rel="stylesheet" href="/css/main.css">
+    @livewireStyles
 </head>
 <body class="bg-gray-900 text-white">
     <header class="border-b border-gray-800">
@@ -54,5 +55,7 @@
             Powered by <a href="#" class="underline hover:text-gray-400">IGDB API</a>
         </div>
     </footer>
+
+    @livewireScripts
 </body>
 </html>
