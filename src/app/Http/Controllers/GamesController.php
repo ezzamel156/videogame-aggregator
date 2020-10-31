@@ -25,8 +25,9 @@ class GamesController extends Controller
                 fields *, cover.url, platforms.abbreviation;
                 where platforms = (48,49,130,6)
                 & ( first_release_date > {$before} 
-                & first_release_date < {$after} );
-                sort follows desc;
+                & first_release_date < {$after} 
+                & total_rating_count > 5 );
+                sort total_rating_count desc;
                 limit 12;
             ", 'raw')
             ->post('https://api.igdb.com/v4/games')
@@ -38,7 +39,7 @@ class GamesController extends Controller
                 where platforms = (48,49,130,6)
                 & ( first_release_date > {$before} 
                 & first_release_date < {$current} 
-                & rating_count > 5);
+                & total_rating_count > 5);
                 sort total_rating_count desc;
                 limit 3;
             ", 'raw')
@@ -50,7 +51,8 @@ class GamesController extends Controller
                 fields *, cover.url, platforms.abbreviation;
                 where platforms = (48,49,130,6)
                 & ( first_release_date > {$current} 
-                & first_release_date < {$afterFourMonths} );
+                & first_release_date < {$afterFourMonths} 
+                & hypes > 5);
                 sort hypes desc;
                 limit 4;
             ", 'raw')
@@ -61,7 +63,8 @@ class GamesController extends Controller
             ->withBody("
                 fields *, cover.url, platforms.abbreviation;
                 where platforms = (48,49,130,6)
-                & (first_release_date > {$current});
+                & (first_release_date > {$current}
+                & hypes > 5);
                 sort first_release_date asc;
                 limit 4;
             ", 'raw')
