@@ -1,5 +1,5 @@
 <div wire:init="loadMostAnticipated" class="most-anticipated-container space-y-10 mt-8">
-    @foreach ($mostAnticipated as $game)
+    @forelse ($mostAnticipated as $game)
         <div class="game flex">
             <a href="#">
                 <img src="{{ isset($game['cover']) ? Str::replaceFirst('thumb', 'cover_small', $game['cover']['url']) : '/jeng' }}" alt="game cover" 
@@ -10,6 +10,15 @@
                 <div class="text-gray-400 text-sm mt-1"> {{ Carbon\Carbon::parse($game['first_release_date'])->format('M d, Y') }} </div>
             </div>
         </div>                        
-    @endforeach
-    <div wire:loading class="spinner"></div>
+    @empty
+        @foreach (range(1,4) as $item)
+            <div class="game flex">
+                <div class="w-16 h-20 bg-gray-800"></div>
+                <div class="ml-4">
+                    <div class="bg-gray-700 text-transparent rounded leading-tight">Title goes here lol</div>
+                    <div class="inline-block bg-gray-700 rounded text-sm text-transparent mt-2"> Jan 01, 2020</div>
+                </div>
+            </div>  
+        @endforeach    
+    @endforelse
 </div>

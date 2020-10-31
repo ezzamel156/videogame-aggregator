@@ -1,5 +1,5 @@
 <div wire:init="loadPopularGames" class="popular-games text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-12 border-b border-gray-800 pb-16">
-    @foreach ($popularGames as $game)
+    @forelse ($popularGames as $game)
         <div class="game mt-8">
             <div class="relative inline-block">
                 <a href="#">
@@ -23,7 +23,16 @@
                     @endif
                 @endforeach
             </div>
-        </div> {{-- games end --}}
-    @endforeach 
-    <div wire:loading class="spinner mt-8"></div>  
+        </div>
+    @empty
+        @foreach (range(1, 12) as $item)
+            <div class="game mt-8">
+                <div class="relative inline-block">
+                    <div class="bg-gray-800 w-44 h-56"></div>
+                </div>
+                <div class="block text-lg text-transparent leading-tight rounded bg-gray-700 mt-4">Title goes here</div>
+                <div class="rounded bg-gray-700 text-transparent inline-block mt-3">Platform goes here</div>
+            </div>            
+        @endforeach    
+    @endforelse
 </div> {{-- popular games end --}}
