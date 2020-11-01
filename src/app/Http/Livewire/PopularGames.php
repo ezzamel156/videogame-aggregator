@@ -18,7 +18,7 @@ class PopularGames extends Component
             $after = Carbon::now()->addMonth(2)->timestamp;
             return Http::withHeaders(config('services.igdb'))
                 ->withBody("
-                    fields name, first_release_date, rating, total_rating_count, cover.url, platforms.abbreviation;
+                    fields name, first_release_date, rating, total_rating_count, cover.url, platforms.abbreviation, slug;
                     where platforms = (48,49,130,6)
                     & ( first_release_date > {$before} 
                     & first_release_date < {$after} 

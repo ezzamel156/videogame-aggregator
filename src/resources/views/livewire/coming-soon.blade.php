@@ -1,7 +1,7 @@
 <div wire:init="loadComingSoon" class="coming-soon-container space-y-10 mt-8">
     @forelse ($comingSoon as $game)
         <div class="game flex">
-            <a href="#">
+            <a href="{{ route('games.show', $game['slug']) }}">
                 <img src="{{ isset($game['cover']) ? Str::replaceFirst('thumb', 'cover_small', $game['cover']['url']) : '/jeng' }}" alt="game cover" 
                     class="w-16 hover:opacity-75 transition ease-in-out duration-150">
             </a>

@@ -5,22 +5,36 @@
     <div class="container mx-auto px-4">
         <div class="game-details border-b border-gray-800 pb-12 flex flex-col lg:flex-row">
             <div class="flex-none">
-                <img src="/ff7.jpg" alt="cover">
+                @isset($game['cover'])
+                    <img src="{{ Str::replaceFirst('thumb', 'cover_big', $game['cover']['url']) }}" alt="cover">                    
+                @endisset
             </div>
             <div class="lg:ml-12 lg:mr-64">
-                <h2 class="font-semibold text-4xl leading-tight mt-1">Final Fantasy VII Remake</h2>
+                <h2 class="font-semibold text-4xl leading-tight mt-1">{{ $game['name'] }}</h2>
                 <div class="text-gray-400">
-                    <span>Adventure, RPG</span>
+                    <span>
+                        @foreach ($game['genres'] as $genre)
+                            {{ $genre['name'] }},
+                        @endforeach    
+                    </span>
                     &middot;                
-                    <span>Square Enix</span>
+                    <span>
+                        {{ $game['involved_companies'][0]['company']['name'] }}
+                    </span>
                     &middot;
-                    <span>Playstation 4</span>                    
+                    <span>
+                        @isset($similar_game['platforms'])
+                            @foreach ($game['platforms'] as $platform)
+                                {{ $platform['abbreviation'] }},
+                            @endforeach
+                        @endisset
+                    </span>                    
                 </div>
                 <div class="flex flex-wrap items-center mt-8">
                     <div class="flex items-center">
                         <div class="w-16 h-16 bg-gray-800 rounded-full">
                             <div class="font-semibold text-xs flex justify-center items-center h-full">
-                                80%
+                                {{ isset($game['rating']) ? round($game['rating']).'%' : '0%' }}
                             </div>
                         </div>
                         <div class="ml-4 text-xs">Member <br> Score</div>
@@ -28,12 +42,12 @@
                     <div class="flex items-center ml-12">
                         <div class="w-16 h-16 bg-gray-800 rounded-full">
                             <div class="font-semibold text-xs flex justify-center items-center h-full">
-                                80%
+                                {{ isset($game['aggregated_rating']) ? round($game['aggregated_rating']).'%' : '0%' }}
                             </div>
                         </div>
                         <div class="ml-4 text-xs">Critic <br> Score</div>
                     </div>
-                    <div class="flex items-center space-x-4 mt-4 lg:mt-0 lg:ml-12">
+                    <div class="flex items-center space-x-4 mt-4 ml-4 lg:mt-0 lg:ml-12">
                         <div class="w-8 h-8 bg-gray-800 rounded-full flex justify-center items-center">
                             <a href="#" class="hover:text-gray-400">
                                 <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -61,15 +75,21 @@
                     </div>
                 </div>
                 <p class="mt-12">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odit quia aliquam perspiciatis adipisci nobis praesentium itaque ipsum! Delectus modi maiores, fuga quas velit laudantium maxime labore adipisci ab, esse odit error hic veritatis reprehenderit nostrum ea ipsam doloremque voluptates!
+                    {{ $game['summary'] }}
                 </p>
                 <div class="mt-12">
-                    <button class="flex items-center bg-blue-500 text-white font-semibold p-4 hover:bg-blue-600 rounded transition ease-in-out duration-150">
+                    {{-- <button class="flex items-center bg-blue-500 text-white font-semibold p-4 hover:bg-blue-600 rounded transition ease-in-out duration-150">
                         <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
                           </svg>
                         <span class="ml-2"> Play Trailer </span>
-                    </button>
+                    </button> --}}
+                    <a href="https://youtube.com/watch/{{ $game['videos'][0]['video_id'] }}" class="inline-flex items-center bg-blue-500 text-white font-semibold p-4 hover:bg-blue-600 rounded transition ease-in-out duration-150">
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                        </svg>
+                        <span class="ml-2"> Play Trailer </span>
+                    </a>
                 </div>
             </div>
         </div> <!-- game-details end -->
@@ -79,11 +99,13 @@
                 Images
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
-                <div>
-                    <a href="#">
-                        <img src="/screenshot.jpg" alt="screenshot" class="hover:opacity-75 transition ease-in-out duration-150">
-                    </a>
-                </div>
+                @foreach ($game['screenshots'] as $screenshot)
+                    <div>
+                        <a href="{{ Str::replaceFirst('thumb', 'screenshot_huge', $screenshot['url']) }}">
+                            <img src="{{ Str::replaceFirst('thumb', 'screenshot_big', $screenshot['url']) }}" alt="screenshot" class="hover:opacity-75 transition ease-in-out duration-150">
+                        </a>
+                    </div>                    
+                @endforeach
             </div>
         </div> <!-- images-container end -->
 
@@ -92,26 +114,34 @@
                 Similar Games
             </h2>
             <div class="similar-games text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-12">
+                @foreach ($game['similar_games'] as $similar_game)
                 <div class="game mt-8">
                     <div class="relative inline-block">
-                        <a href="#">
-                            <img src="/jeng" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
+                        <a href="{{ route('games.show', $similar_game['slug'])}}">
+                            @isset($similar_game['cover'])
+                                <img src="{{ Str::replaceFirst('thumb', 'cover_small', $similar_game['cover']['url']) }}" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
+                            @endisset
                         </a>
                         <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full" style="right:-20px; bottom:-20px">
                             <div class="font-semibold text-xs flex justify-center items-center h-full">
-                                80%
+                                {{ isset($similar_game['rating']) ? round($similar_game['rating']).'%' : '0%' }}
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">
-                        Final Fantasy                    
+                    <a href="{{ route('games.show', $similar_game['slug'])}}" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">
+                        {{ $similar_game['name']}}                  
                     </a>
                     <div class="text-gray-400 mt-1">
-                        Playstation 4 
+                        @isset($similar_game['platforms'])
+                            @foreach ($similar_game['platforms'] as $platform)
+                                {{ $platform['abbreviation'] }},
+                            @endforeach                             
+                        @endisset
                     </div>
-                </div> {{-- games end --}}
-            </div> {{-- popular games end --}}
-        </div> <!-- similar-games-container end -->
+                </div> {{-- games end --}}                    
+                @endforeach
+            </div> 
+        </div> 
     </div>
 
 @endsection

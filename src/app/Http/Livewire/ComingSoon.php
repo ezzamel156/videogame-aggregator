@@ -18,7 +18,7 @@ class ComingSoon extends Component
             $current = Carbon::now()->timestamp;                            
             return Http::withHeaders(config('services.igdb'))
                 ->withBody("
-                    fields name, first_release_date, rating, total_rating_count, hypes, cover.url, platforms.abbreviation;
+                    fields name, first_release_date, rating, total_rating_count, hypes, cover.url, platforms.abbreviation, slug;
                     where platforms = (48,49,130,6)
                     & (first_release_date > {$current}
                     & hypes > 5);

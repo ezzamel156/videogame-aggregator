@@ -19,6 +19,6 @@
                     <div class="inline-block bg-gray-700 rounded text-sm text-transparent mt-2"> Jan 01, 2020</div>
                 </div>
             </div>  
-        @endforeach    
+        @endforeach
     @endforelse
 </div>
