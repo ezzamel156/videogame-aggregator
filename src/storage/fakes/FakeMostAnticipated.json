@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1877,
+        "cover": {
+            "id": 82217,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1rft.jpg"
+        },
+        "first_release_date": 1607558400,
+        "hypes": 993,
+        "name": "Fake Cyberpunk 2077",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            },
+            {
+                "id": 167,
+                "abbreviation": "PS5"
+            },
+            {
+                "id": 169,
+                "abbreviation": "Series X"
+            },
+            {
+                "id": 170,
+                "abbreviation": "Stadia"
+            }
+        ],
+        "slug": "cyberpunk-2077"
+    },
+    {
+        "id": 54842,
+        "cover": {
+            "id": 82670,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1rse.jpg"
+        },
+        "first_release_date": 1609372800,
+        "hypes": 155,
+        "name": "Biomutant",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            }
+        ],
+        "slug": "biomutant"
+    },
+    {
+        "id": 119357,
+        "cover": {
+            "id": 114059,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2g0b.jpg"
+        },
+        "first_release_date": 1606953600,
+        "hypes": 46,
+        "name": "Immortals Fenyx Rising",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            },
+            {
+                "id": 130,
+                "abbreviation": "Switch"
+            },
+            {
+                "id": 167,
+                "abbreviation": "PS5"
+            },
+            {
+                "id": 169,
+                "abbreviation": "Series X"
+            },
+            {
+                "id": 170,
+                "abbreviation": "Stadia"
+            }
+        ],
+        "slug": "immortals-fenyx-rising"
+    },
+    {
+        "id": 44242,
+        "cover": {
+            "id": 82669,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1rsd.jpg"
+        },
+        "first_release_date": 1609372800,
+        "hypes": 45,
+        "name": "Junkyard Simulator",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            }
+        ],
+        "slug": "junkyard-simulator"
+    }
+]

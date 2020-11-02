@@ -1,0 +1,83 @@
+[
+    {
+        "id": 113112,
+        "cover": {
+            "id": 81443,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1qub.jpg"
+        },
+        "first_release_date": 1600300800,
+        "name": "Fake Hades",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 14,
+                "abbreviation": "Mac"
+            },
+            {
+                "id": 130,
+                "abbreviation": "Switch"
+            }
+        ],
+        "rating": 91.92874746924501,
+        "slug": "hades--1",
+        "summary": "Defy the god of death as you hack and slash your way out of the Underworld in this rogue-like dungeon crawler from the creators of Bastion, Transistor, and Pyre.",
+        "total_rating_count": 75
+    },
+    {
+        "id": 119277,
+        "cover": {
+            "id": 74951,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1ltz.jpg"
+        },
+        "first_release_date": 1601251200,
+        "name": "Genshin Impact",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 34,
+                "abbreviation": "Android"
+            },
+            {
+                "id": 39,
+                "abbreviation": "iOS"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 130,
+                "abbreviation": "Switch"
+            }
+        ],
+        "rating": 55.9939648978538,
+        "slug": "genshin-impact",
+        "summary": "Genshin Impact is an open-world action RPG. In the world of Teyvat—where beliefs in “The Seven” converge—epic adventures await, fearless travelers!",
+        "total_rating_count": 52
+    },
+    {
+        "id": 9495,
+        "cover": {
+            "id": 77532,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1nto.jpg"
+        },
+        "first_release_date": 1600819200,
+        "name": "Squad",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            }
+        ],
+        "rating": 89.6669295561407,
+        "slug": "squad",
+        "summary": "Squad is an online, team-based military experience where high levels of teamwork and communication are crucial to success. Built from the ground up in Unreal Engine 4, Squad pits teams of up to 50 people against each other in intense modern day combined-arms combat scenarios. In this realistic environment, the flow of the game is dictated by the players, with organic and emergent gameplay reigning supreme.",
+        "total_rating_count": 40
+    }
+]

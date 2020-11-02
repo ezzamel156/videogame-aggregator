@@ -1,0 +1,318 @@
+[
+    {
+        "id": 113112,
+        "cover": {
+            "id": 81443,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1qub.jpg"
+        },
+        "first_release_date": 1600300800,
+        "name": "Fake Hades",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 14,
+                "abbreviation": "Mac"
+            },
+            {
+                "id": 130,
+                "abbreviation": "Switch"
+            }
+        ],
+        "rating": 91.9256625767862,
+        "slug": "hades--1",
+        "total_rating_count": 74
+    },
+    {
+        "id": 119277,
+        "cover": {
+            "id": 74951,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1ltz.jpg"
+        },
+        "first_release_date": 1601251200,
+        "name": "Genshin Impact",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 34,
+                "abbreviation": "Android"
+            },
+            {
+                "id": 39,
+                "abbreviation": "iOS"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 130,
+                "abbreviation": "Switch"
+            }
+        ],
+        "rating": 55.791926526381,
+        "slug": "genshin-impact",
+        "total_rating_count": 51
+    },
+    {
+        "id": 9495,
+        "cover": {
+            "id": 77532,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1nto.jpg"
+        },
+        "first_release_date": 1600819200,
+        "name": "Squad",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            }
+        ],
+        "rating": 89.6669295561407,
+        "slug": "squad",
+        "total_rating_count": 40
+    },
+    {
+        "id": 134070,
+        "cover": {
+            "id": 102225,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co26vl.jpg"
+        },
+        "first_release_date": 1600992000,
+        "name": "Mafia: Definitive Edition",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            }
+        ],
+        "rating": 78.4799551393744,
+        "slug": "mafia-definitive-edition",
+        "total_rating_count": 36
+    },
+    {
+        "id": 133887,
+        "cover": {
+            "id": 100879,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co25u7.jpg"
+        },
+        "first_release_date": 1599177600,
+        "name": "Tony Hawk's Pro Skater 1+2",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            }
+        ],
+        "rating": 85.42490294065641,
+        "slug": "tony-hawks-pro-skater-1-plus-2",
+        "total_rating_count": 27
+    },
+    {
+        "id": 26950,
+        "cover": {
+            "id": 111950,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2edq.jpg"
+        },
+        "first_release_date": 1599177600,
+        "name": "Marvel's Avengers",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            },
+            {
+                "id": 167,
+                "abbreviation": "PS5"
+            },
+            {
+                "id": 169,
+                "abbreviation": "Series X"
+            },
+            {
+                "id": 170,
+                "abbreviation": "Stadia"
+            }
+        ],
+        "rating": 52.9677796572096,
+        "slug": "marvels-avengers",
+        "total_rating_count": 24
+    },
+    {
+        "id": 134706,
+        "cover": {
+            "id": 105806,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co29n2.jpg"
+        },
+        "first_release_date": 1601596800,
+        "name": "Star Wars: Squadrons",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            },
+            {
+                "id": 162,
+                "abbreviation": "Oculus VR"
+            },
+            {
+                "id": 163,
+                "abbreviation": "Steam VR"
+            },
+            {
+                "id": 165,
+                "abbreviation": "PlayStation VR"
+            }
+        ],
+        "rating": 70.2106955784643,
+        "slug": "star-wars-squadrons",
+        "total_rating_count": 21
+    },
+    {
+        "id": 138235,
+        "cover": {
+            "id": 117904,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2iz4.jpg"
+        },
+        "first_release_date": 1601510400,
+        "name": "Super Mario Bros. 35",
+        "platforms": [
+            {
+                "id": 130,
+                "abbreviation": "Switch"
+            }
+        ],
+        "rating": 69.9890838086745,
+        "slug": "super-mario-bros-35",
+        "total_rating_count": 20
+    },
+    {
+        "id": 138225,
+        "cover": {
+            "id": 114153,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2g2x.jpg"
+        },
+        "first_release_date": 1600387200,
+        "name": "Super Mario 3D All-Stars",
+        "platforms": [
+            {
+                "id": 130,
+                "abbreviation": "Switch"
+            }
+        ],
+        "rating": 82.9649014217502,
+        "slug": "super-mario-3d-all-stars",
+        "total_rating_count": 20
+    },
+    {
+        "id": 135254,
+        "cover": {
+            "id": 116248,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2hp4.jpg"
+        },
+        "first_release_date": 1601596800,
+        "name": "Crash Bandicoot 4: It's About Time",
+        "platforms": [
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            }
+        ],
+        "rating": 70.04408805202159,
+        "slug": "crash-bandicoot-4-its-about-time",
+        "total_rating_count": 18
+    },
+    {
+        "id": 112870,
+        "cover": {
+            "id": 71923,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1jhv.jpg"
+        },
+        "first_release_date": 1599091200,
+        "name": "Spellbreak",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            },
+            {
+                "id": 130,
+                "abbreviation": "Switch"
+            }
+        ],
+        "rating": 66.73652850141819,
+        "slug": "spellbreak",
+        "total_rating_count": 16
+    },
+    {
+        "id": 131785,
+        "cover": {
+            "id": 117744,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2iuo.jpg"
+        },
+        "first_release_date": 1603152000,
+        "name": "Amnesia: Rebirth",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            }
+        ],
+        "rating": 85.48742339448219,
+        "slug": "amnesia-rebirth",
+        "total_rating_count": 15
+    }
+]

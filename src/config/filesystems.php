@@ -64,6 +64,11 @@ return [
             'url' => env('AWS_URL'),
         ],
 
+        'fakes' => [
+            'driver' => 'local',
+            'root' => storage_path('fakes'),
+        ],
+
     ],
 
     /*

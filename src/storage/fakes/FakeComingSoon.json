@@ -1,0 +1,126 @@
+[
+    {
+        "id": 36595,
+        "cover": {
+            "id": 84539,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1t8b.jpg"
+        },
+        "first_release_date": 1604966400,
+        "hypes": 7,
+        "name": "Fake Sakuna: Of Rice and Ruin",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 130,
+                "abbreviation": "Switch"
+            }
+        ],
+        "slug": "sakuna-of-rice-and-ruin"
+    },
+    {
+        "id": 117509,
+        "cover": {
+            "id": 105570,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co29gi.jpg"
+        },
+        "first_release_date": 1604966400,
+        "hypes": 12,
+        "name": "XIII",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            },
+            {
+                "id": 130,
+                "abbreviation": "Switch"
+            }
+        ],
+        "slug": "xiii--1"
+    },
+    {
+        "id": 133004,
+        "cover": {
+            "id": 111927,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2ed3.jpg"
+        },
+        "first_release_date": 1604966400,
+        "hypes": 18,
+        "name": "Assassin's Creed: Valhalla",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 49,
+                "abbreviation": "XONE"
+            },
+            {
+                "id": 167,
+                "abbreviation": "PS5"
+            },
+            {
+                "id": 169,
+                "abbreviation": "Series X"
+            },
+            {
+                "id": 170,
+                "abbreviation": "Stadia"
+            }
+        ],
+        "slug": "assassins-creed-valhalla"
+    },
+    {
+        "id": 113118,
+        "cover": {
+            "id": 116141,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2hm5.jpg"
+        },
+        "first_release_date": 1605139200,
+        "hypes": 18,
+        "name": "The Pathless",
+        "platforms": [
+            {
+                "id": 6,
+                "abbreviation": "PC"
+            },
+            {
+                "id": 14,
+                "abbreviation": "Mac"
+            },
+            {
+                "id": 39,
+                "abbreviation": "iOS"
+            },
+            {
+                "id": 48,
+                "abbreviation": "PS4"
+            },
+            {
+                "id": 167,
+                "abbreviation": "PS5"
+            }
+        ],
+        "slug": "the-pathless"
+    }
+]
