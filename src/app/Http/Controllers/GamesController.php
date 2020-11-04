@@ -72,8 +72,8 @@ class GamesController extends Controller
             'coverImageUrl' => isset($game['cover']) ? Str::replaceFirst('thumb', 'cover_big', $game['cover']['url']) : 'https://http://via.placeholder.com/264x352',
             'genres' => isset($game['genres']) ? collect($game['genres'])->pluck('name')->implode(', ') : null,
             'involvedCompanies' => isset($game['involved_companies']) ? $game['involved_companies'][0]['company']['name'] : null,
-            'memberRating' => isset($game['rating']) ? round($game['rating']).'%' : '0%',
-            'criticRating' => isset($game['aggregated_rating']) ? round($game['aggregated_rating']).'%' : '0%',
+            'memberRating' => isset($game['rating']) ? round($game['rating']) : '0',
+            'criticRating' => isset($game['aggregated_rating']) ? round($game['aggregated_rating']) : '0',
             'platforms' => isset($game['platforms']) ? collect($game['platforms'])->pluck('abbreviation')->implode(', ') : null,
             'trailer' => isset($game['videos']) ? "https://youtube.com/watch/{$game['videos'][0]['video_id']}" : '#',
             'screenshots' => isset($game['screenshots']) ? collect($game['screenshots'])
@@ -88,7 +88,7 @@ class GamesController extends Controller
                     return collect($similarGame)->merge([
                         'coverImageUrl' => isset($similarGame['cover']) ? Str::replaceFirst('thumb', 'cover_small', $similarGame['cover']['url']) : 'https://http://via.placeholder.com/264x352',
                         'platforms' => isset($similarGame['platforms']) ? collect($similarGame['platforms'])->pluck('abbreviation')->implode(', ') : null,
-                        'rating' => isset($similarGame['rating']) ? round($similarGame['rating']).'%' : '0%',
+                        'rating' => isset($similarGame['rating']) ? round($similarGame['rating']) : '0',
                     ]);
                 })->take(6) : null,
             'social' => [
