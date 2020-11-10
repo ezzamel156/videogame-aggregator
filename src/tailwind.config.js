@@ -3,7 +3,10 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: [
+    './app/**/*.php',
+    './resources/**/*.php',
+  ],
   theme: {
     extend: {
       spacing: {
