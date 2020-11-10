@@ -75,7 +75,7 @@ class GamesController extends Controller
             'memberRating' => isset($game['rating']) ? round($game['rating']) : '0',
             'criticRating' => isset($game['aggregated_rating']) ? round($game['aggregated_rating']) : '0',
             'platforms' => isset($game['platforms']) ? collect($game['platforms'])->pluck('abbreviation')->implode(', ') : null,
-            'trailer' => isset($game['videos']) ? "https://youtube.com/watch/{$game['videos'][0]['video_id']}" : '#',
+            'trailer' => isset($game['videos']) ? "https://youtube.com/embed/{$game['videos'][0]['video_id']}" : '#',
             'screenshots' => isset($game['screenshots']) ? collect($game['screenshots'])
                 ->map(function($screenshot) {
                     return [
