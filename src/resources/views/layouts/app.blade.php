@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ config('app.name')}}</title>
     <link rel="stylesheet" href="/css/main.css">
-    @livewireStyles
+    <livewire:styles>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
 </head>
 <body class="bg-gray-900 text-white">
     <header class="border-b border-gray-800">
@@ -31,14 +32,7 @@
                 </ul>
             </div>
             <div class="flex items-center mt-6 lg:mt-0">
-                <div class="relative">
-                    <input type="text" class="text-sm bg-gray-800 rounded-full focus:outline-none focus:shadow-outline px-3 py-1 w-64">
-                    <div class="absolute top-0 flex items-center h-full ml-2">
-                        <svg class="w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </div>
-                </div>
+                <livewire:search-dropdown>
                 <div class="ml-6">
                     <a href="#">
                         <img alt="@ezzamel156" src="https://avatars3.githubusercontent.com/u/19977029?s=60&amp;v=4" class="rounded-full w-8">                        
@@ -56,7 +50,7 @@
         </div>
     </footer>
 
-    @livewireScripts
+    <livewire:scripts>
     <script src="/js/app.js"></script>
     @stack('scripts')
 </body>
