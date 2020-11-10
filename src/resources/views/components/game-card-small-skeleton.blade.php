@@ -1,4 +1,4 @@
-<div class="game flex">
+<div class="game flex animate-pulse">
     <div class="w-16 h-20 bg-gray-800"></div>
     <div class="ml-4">
         <div class="bg-gray-700 text-transparent rounded leading-tight">Title goes here lol</div>

@@ -1,4 +1,4 @@
-<div class="game bg-gray-800 rounded-lg shadow-md flex px-6 py-6">
+<div class="game bg-gray-800 rounded-lg shadow-md flex px-6 py-6 animate-pulse">
     <div class="relative flex-none">
         <div class="bg-gray-700 w-32 h-40 lg:w-48 lg:h-56"></div>
     </div>
