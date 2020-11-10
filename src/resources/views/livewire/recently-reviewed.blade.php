@@ -7,11 +7,8 @@
                         class="w-48 hover:opacity-75 transition ease-in-out duration-150">
                 </a>
                 @if (isset($game['rating']))
-                    <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-900 rounded-full" style="right:-20px; bottom:-20px">
-                        <div class="font-semibold text-xs flex justify-center items-center h-full">
-                            {{ $game['rating'] }}
-                        </div>
-                    </div>                                    
+                    <div id="review_{{ $game['slug'] }}" class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full text-xs" style="right:-20px; bottom:-20px">                
+                    </div>                                   
                 @endif
             </div>
             <div class="ml-12">
@@ -32,3 +29,9 @@
         @endforeach
     @endforelse
 </div>
+
+@push('scripts')
+    @include('_rating', [
+        'event' => 'reviewGameWithRatingLoaded',
+    ])
+@endpush

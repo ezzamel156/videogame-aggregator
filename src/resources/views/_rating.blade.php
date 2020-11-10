@@ -1,5 +1,10 @@
 <script>
-    var bar = new ProgressBar.Circle(document.getElementById('{{ $slug }}'), {
+    @if($event) 
+        Livewire.on('{{ $event }}', params => { 
+            var bar = new ProgressBar.Circle(document.getElementById(params.slug), {
+    @else
+        var bar = new ProgressBar.Circle(document.getElementById('{{ $slug }}'), {
+    @endif
     color: 'white',
     // This has to be the same size as the maximum width to
     // prevent clipping
@@ -27,6 +32,10 @@
 
     }
     });
-
-    bar.animate( {{ $rating}} / 100); 
+    @if($event)
+            bar.animate( params.rating / 100); 
+        })
+    @else
+        bar.animate( {{ $rating}} / 100); 
+    @endif
 </script>  

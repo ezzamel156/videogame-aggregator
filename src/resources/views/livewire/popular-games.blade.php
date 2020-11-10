@@ -7,3 +7,14 @@
         @endforeach    
     @endforelse
 </div> {{-- popular games end --}}
+
+@push('scripts')
+    @include('_rating', [
+        'event' => 'gameWithRatingLoaded',
+    ])
+    {{-- <script>
+        Livewire.on('gameWithRatingAdded', params => {
+            console.log('A post was added with the id of: ' + params.slug);
+        })
+    </script> --}}
+@endpush
